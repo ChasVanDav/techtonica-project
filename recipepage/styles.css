@@ -34,5 +34,6 @@ ol {
 }
 
 .right {
-
+    width: 600px;
+    float: left;
 }
