@@ -7,9 +7,6 @@ body {
     font-style: normal;
 }
 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 400
-
 .playwrite-cu- {
   font-family: "Playwrite CU", cursive;
   font-optical-sizing: auto;
@@ -34,6 +31,13 @@ h2 {
 }
 
 h4 {
+  color: white;
+    font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 150;
+}
+
+h5 {
   font-weight: lighter;
 }
 
@@ -49,7 +53,6 @@ p {
 .right {
     width: 600px;
     float:left;
-    margin-left: 50;
 }
 
 #titles {
