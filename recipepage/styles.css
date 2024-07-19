@@ -1,3 +1,23 @@
 body {
     background-color: rgb(107, 167, 107);
 }
+
+h2 {
+    color: darkgreen;
+}
+
+h4 {
+    color: darkgreen;
+}
+
+p {
+    color: darkgreen;
+}
+
+ul {
+    color: darkgreen; 
+}
+
+ol {
+    color: darkgreen;
+}
