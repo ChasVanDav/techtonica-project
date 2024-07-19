@@ -1,5 +1,10 @@
 body {
-    background-color: rgb(107, 167, 107);
+    background-color: rgb(140, 182, 140);
+    color: darkolivegreen;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
 }
 
 // <uniquifier>: Use a unique and descriptive class name
@@ -12,6 +17,14 @@ body {
   font-style: normal;
 }
 
+.mulish- {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+  }
+  
+
 h2 {
     color: white;
     font-family: "Playwrite CU", cursive;
@@ -20,21 +33,8 @@ h2 {
   font-style: normal;
 }
 
-h4 {
-    color: darkgreen;
-}
-
 p {
-    color: darkgreen;
     width: 600px;
-}
-
-ul {
-    color: darkgreen; 
-}
-
-ol {
-    color: darkgreen;
 }
 
 .left {
@@ -45,4 +45,13 @@ ol {
 .right {
     width: 600px;
     float:left;
+    margin-left: 50;
+}
+
+#titles {
+    color: white;
+    font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 150;
+  font-style: normal;
 }
