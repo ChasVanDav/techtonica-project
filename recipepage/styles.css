@@ -24,10 +24,6 @@ ol {
     color: darkgreen;
 }
 
-.top {
-
-}
-
 .left {
     width: 600px;
     float: left;
@@ -35,5 +31,5 @@ ol {
 
 .right {
     width: 600px;
-    float: left;
+    float:left;
 }
