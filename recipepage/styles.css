@@ -1,6 +1,6 @@
 body {
     background-color: rgb(140, 182, 140);
-    color: darkolivegreen;
+    color: rgb(49, 71, 11);
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
     font-weight: lighter;
@@ -31,6 +31,10 @@ h2 {
   font-optical-sizing: auto;
   font-weight: 150;
   font-style: normal;
+}
+
+h4 {
+  font-weight: lighter;
 }
 
 p {
