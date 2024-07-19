@@ -1,5 +1,6 @@
 body {
     background-color: rgb(107, 167, 107);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -12,6 +13,7 @@ h4 {
 
 p {
     color: darkgreen;
+    width: 600px;
 }
 
 ul {
@@ -21,3 +23,4 @@ ul {
 ol {
     color: darkgreen;
 }
+
