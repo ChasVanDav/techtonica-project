@@ -1,10 +1,23 @@
 body {
     background-color: rgb(107, 167, 107);
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 400
+
+.playwrite-cu- {
+  font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 150;
+  font-style: normal;
 }
 
 h2 {
-    color: darkgreen;
+    color: white;
+    font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 150;
+  font-style: normal;
 }
 
 h4 {
