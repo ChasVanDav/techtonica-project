@@ -5,9 +5,13 @@ body {
     font-optical-sizing: auto;
     font-weight: lighter;
     font-style: normal;
-    margin-left: 20px;
-    margin-top: 100px;
 }
+
+@media screen and (min-width:1218px) {
+  .container {
+   max-width: 1218px;
+  }
+  }
 
 .playwrite-cu- {
   font-family: "Playwrite CU", cursive;
@@ -48,14 +52,17 @@ p {
     width: 600px;
 }
 
+.top {
+  margin-top: 50px;
+}
+
 .left {
-    width: 600px;
-    float: left;
+float:left;
+ 
 }
 
 .right {
-    width: 600px;
-    float:left;
+float:left;
 }
 
 #titles {
@@ -73,3 +80,4 @@ p {
 li.strikethrough {
   text-decoration: line-through;
 }
+
