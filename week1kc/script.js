@@ -9,6 +9,6 @@ newLi.textContent = 'I am learning Javascript and getting pretty good at it!';
 list.appendChild(newLi);
 
 //step 8: Using DOM manipulation change the color of the person's hometown
-
 const hometownElement = document.getElementById('hometown');
 hometownElement.style.color = 'orange'; 
+
