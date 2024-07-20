@@ -65,3 +65,7 @@ p {
   font-weight: 150;
   font-style: normal;
 }
+
+.checked {
+  text-decoration: line-through;
+}
