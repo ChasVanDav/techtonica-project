@@ -7,22 +7,31 @@ newListItem.textContent = 'Jalapenos';
 // And finally, let's add that list item as a child of the ul.
 document.querySelector('ul').appendChild(newListItem);
 
+
 //Adding checkboxes
-const ingredientList = document.getElementById("ingredientList");
-let checkbox = document.createElement("input");
+// Get the unordered list by id
+const ul = document.getElementById("ingredientList");
 
-checkbox.type = "checkbox";
-checkbox.name = "name";
-checkbox.value = "value";
-checkbox.id = "id";
+// Get all list items
+const listItems = ul.getElementsByTagName("li");
 
-let label = document.createElement("label");
+// Loop through each list item
+for (let i = 0; i < listItems.length; i++) {
+    const li = listItems[i];
 
-label.htmlFor = "id";
+    // Create a checkbox element
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
 
-label.appendChild(
-    document.createTextNode("This creates the label for checkbox")
-);
+    // Add an event listener to the checkbox
+    checkbox.addEventListener('change', function() {
+        if (this.checked) {
+            li.classList.add('strikethrough');
+        } else {
+            li.classList.remove('strikethrough');
+        }
+    });
 
-ingredientList.appendChild(checkbox);
-ingredientList.appendChild(label);
+    // Prepend the checkbox to the list item
+    li.prepend(checkbox);
+}

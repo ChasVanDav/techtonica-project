@@ -69,3 +69,7 @@ p {
 .checked {
   text-decoration: line-through;
 }
+
+li.strikethrough {
+  text-decoration: line-through;
+}
