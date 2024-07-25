@@ -20,6 +20,24 @@ body {
   }
   }
 
+  @media (any-hover: hover) {
+    .ingredient:hover {
+      background: pink;
+    }
+  }
+
+  @media (any-hover: hover) {
+    .ingredient.strikethrough:hover {
+      background: lightgray;
+    }
+  }
+
+  @media (any-hover: hover) {
+    li:hover {
+      background: pink;
+    }
+  }
+
 .playwrite-cu- {
   font-family: "Playwrite CU", cursive;
   font-optical-sizing: auto;

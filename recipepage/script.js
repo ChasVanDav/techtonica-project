@@ -1,13 +1,3 @@
-//adding a new item to the ul list
-// create a new list item and store it in a variable.
-let newListItem = document.createElement("li");
-
-// update the text content of that list item.
-newListItem.textContent = "Onions";
-
-//  add that list item as a child of the ul.
-document.querySelector("ul").appendChild(newListItem);
-
 
 //adding checkboxes
 // Get the unordered list by id
@@ -38,6 +28,7 @@ for (let i = 0; i < listItems.length; i++) {
     li.prepend(checkbox);
 }
 
+//pop up window
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -63,3 +54,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+setTimeout(() => {
+  // call modal open function
+  }, 30 * 1000)
