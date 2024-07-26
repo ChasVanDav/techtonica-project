@@ -7,6 +7,10 @@ body {
     font-style: normal;
 }
 
+.top, .left, .right {
+  float: none; /* Ensure they are not floated */
+}
+
 #picture {
   border-radius: 5px;
   border-color: antiquewhite;
@@ -79,17 +83,18 @@ p {
 
 .top {
   margin-top: 50px;
+  float:none;
 }
 
 .left {
   margin-top: 50px;
-  float:left;
+  float:none;
  
 }
 
 .right {
   margin-top: 50px;
-  float:left;
+  float:none;
 }
 
 #titles {
@@ -240,9 +245,4 @@ p {
   .container {
     max-width: 100%; /* Ensure container fits within screen */
   }
-}
-
-#colorchange {
-  margin-top: 2em;
-padding: 2em;
 }
