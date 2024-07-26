@@ -9,6 +9,7 @@ body {
 
 .top, .left, .right {
   float: none; /* Ensure they are not floated */
+  width:100%;
 }
 
 #picture {
