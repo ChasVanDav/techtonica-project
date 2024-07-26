@@ -55,6 +55,43 @@ window.onclick = function(event) {
   }
 }
 
-setTimeout(() => {
-  // call modal open function
-  }, 30 * 1000)
+// setTimeout(() => {
+//   // call modal open function
+//   }, 30 * 1000)
+
+
+// Text and Background color changer by user input with error message
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const textColorInput = document.getElementById('textColor');
+    const bgColorInput = document.getElementById('bgColor');
+    const applyBtn = document.getElementById('applyBtn');
+  
+    // Function to validate if the input is a valid color
+    function isValidColor(color) {
+      const s = new Option().style;
+      s.color = color;
+      return s.color !== '';
+    }
+  
+    applyBtn.addEventListener('click', () => {
+      const newTextColor = textColorInput.value;
+      const newBgColor = bgColorInput.value;
+  
+      if (newTextColor) {
+        if (isValidColor(newTextColor)) {
+          document.body.style.color = newTextColor;
+        } else {
+          alert("Invalid text color entered. Please try again.");
+        }
+      }
+  
+      if (newBgColor) {
+        if (isValidColor(newBgColor)) {
+          document.body.style.backgroundColor = newBgColor;
+        } else {
+          alert("Invalid background color entered. Please try again.");
+        }
+      }
+    });
+  });

@@ -22,6 +22,8 @@
 </head>
 <body>
 
+<!-- Formatting for bootstrap -->
+
     <div class="container">
         <div class="row">
             <div class="top col-12"></div>
@@ -32,18 +34,33 @@
         </div>
     </div>
 
+<!-- Navigation bar -->
 
     <div class="container-fluid">
         <nav class="navbar fixed-top navbar-light bg-light justify-content-between">
             <a class="navbar-brand">Korean Recipes</a>
-                    <!-- Trigger/Open The Modal -->
-            <button id="myBtn">Newsletter</button>
+<!-- Pop-up Button -->
+            <button id="myBtn">Click to sign up for our Newsletter</button>
             <form class="form-inline">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search a recipe</button>
             </form>
           </nav>      
         </div>
+
+<!-- Inouts and Button for Color Change by User Input -->
+
+        <div>
+            <label for="textColor">Enter new text color:</label>
+            <input type="text" id="textColor" placeholder="e.g., red, #ff0000">
+          </div>
+          <div>
+            <label for="bgColor">Enter new background color:</label>
+            <input type="text" id="bgColor" placeholder="e.g., blue, #0000ff">
+          </div>
+          <button id="applyBtn">Apply Colors</button>
+
+<!-- Content begins -->
 
     <div class="container">
     <div class="top">
