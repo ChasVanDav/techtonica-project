@@ -39,9 +39,11 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
+const openModal = function() {
   modal.style.display = "block";
 }
+
+btn.onclick = openModal;
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -55,9 +57,9 @@ window.onclick = function(event) {
   }
 }
 
-// setTimeout(() => {
-//   // call modal open function
-//   }, 30 * 1000)
+setTimeout(() => {
+  openModal();
+  }, 5 * 1000)
 
 
 // Text and Background color changer by user input with error message

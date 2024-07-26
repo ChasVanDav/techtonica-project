@@ -9,7 +9,13 @@ body {
 
 .top, .left, .right {
   float: none; /* Ensure they are not floated */
-  width:100%;
+  width:fit-content;
+}
+
+.container {
+  width: 80%;
+  max-width: 80% !important;
+  margin:auto;
 }
 
 #picture {
@@ -78,10 +84,6 @@ h5 {
   font-weight: lighter;
 }
 
-p {
-    width: 600px;
-}
-
 .top {
   margin-top: 50px;
   float:none;
@@ -94,8 +96,9 @@ p {
 }
 
 .right {
-  margin-top: 50px;
+  margin-top: 20px;
   float:none;
+  padding-bottom: 20px;
 }
 
 #titles {
@@ -246,4 +249,9 @@ p {
   .container {
     max-width: 100%; /* Ensure container fits within screen */
   }
+}
+
+
+ol {
+  margin-bottom: 20px !important;
 }
