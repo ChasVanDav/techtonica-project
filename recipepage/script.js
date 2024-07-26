@@ -57,13 +57,13 @@ window.onclick = function(event) {
   }
 }
 
+//thank you mentor! 5 second timer for pop up to appear upon entering webpage
 setTimeout(() => {
   openModal();
   }, 5 * 1000)
 
 
 // Text and Background color changer by user input with error message
-
   document.addEventListener('DOMContentLoaded', () => {
     const textColorInput = document.getElementById('textColor');
     const bgColorInput = document.getElementById('bgColor');
