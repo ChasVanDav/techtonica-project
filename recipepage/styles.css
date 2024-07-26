@@ -28,7 +28,7 @@ body {
 
   @media (any-hover: hover) {
     .ingredient.strikethrough:hover {
-      background: lightgray;
+      background: lightblue;
     }
   }
 
@@ -116,8 +116,8 @@ float:left;
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
+  display:inline; /* Hidden by default */
+  position:absolute; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
