@@ -57,10 +57,10 @@ window.onclick = function(event) {
   }
 }
 
-//thank you mentor! 5 second timer for pop up to appear upon entering webpage
-setTimeout(() => {
-  openModal();
-  }, 5 * 1000)
+// //thank you mentor! 5 second timer for pop up to appear upon entering webpage
+// setTimeout(() => {
+//   openModal();
+//   }, 5 * 1000)
 
 
 // Text and Background color changer by user input with error message
@@ -84,7 +84,7 @@ setTimeout(() => {
         if (isValidColor(newTextColor)) {
           document.body.style.color = newTextColor;
         } else {
-          alert("Invalid text color entered. Please try again.");
+          alert("Invalid text color entered. No spacing. Please try again.");
         }
       }
   
@@ -92,7 +92,7 @@ setTimeout(() => {
         if (isValidColor(newBgColor)) {
           document.body.style.backgroundColor = newBgColor;
         } else {
-          alert("Invalid background color entered. Please try again.");
+          alert("Invalid background color entered. No spacing. Please try again.");
         }
       }
     });

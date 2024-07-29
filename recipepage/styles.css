@@ -9,8 +9,9 @@ body {
 
 /* override bootstrap sizing */
 .top, .left, .right {
-  float: none; /* Ensure they are not floated */
+  float: none; 
   width:fit-content;
+  justify-content: center;
 }
 
 .container {
@@ -34,6 +35,7 @@ body {
   }
   }
 
+/* Hover over elements = color change */
   @media (any-hover: hover) {
     .ingredient:hover {
       background: pink;
@@ -172,8 +174,8 @@ h5 {
 /* Styling the button */
 /* The Button */
 #myBtn {
-  background-color: green; /* Background color */
-  color: pink; /* Text color */
+  background-color: gray; /* Background color */
+  color: beige; /* Text color */
   padding: 10px 20px; /* Padding */
   border: none; /* No border */
   border-radius: 5px; /* Rounded corners */
@@ -187,8 +189,8 @@ h5 {
 }
 
 #applyBtn {
-  background-color: green; /* Background color */
-  color: pink; /* Text color */
+  background-color: gray; /* Background color */
+  color: beige; /* Text color */
   padding: 10px 20px; /* Padding */
   border: none; /* No border */
   border-radius: 5px; /* Rounded corners */
