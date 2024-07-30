@@ -1,0 +1,95 @@
+body {
+    /* color:6B717E; */
+    background-color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:gray;
+}
+
+div {
+    border-radius: 8px;
+}
+
+/* menu */
+#navigationbar {
+    text-align:right;
+    background-color: rgb(235, 112, 112);
+    border-radius: 8px;
+    position:sticky;
+}
+
+/* nav bar href content */
+a {
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 15px;
+        color:white;
+        
+}
+
+/* Resume button on nav bar */
+button {
+    background-color: skyblue;
+    font-size: 16px;
+    font-family: monospace;
+    border-radius: 8px;
+   color:white;
+border:wheat;
+
+}
+
+a:hover {
+    background-color: white;
+    color:lightcoral
+}
+
+button:hover {
+    background-color: white;
+    color:skyblue;
+}
+
+/* Hi...Davis */
+#opening {
+    /* background-color: black; */
+    margin: 10px;
+    margin-top: 100px;
+    /* color: bisque; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+/* "hi, my name is */
+#hi { 
+    font-family: monospace;
+    font-size: 25px;
+    color:lightcoral;
+}
+
+/* Chasity Davis */
+#fullname {
+font-size:70px;
+color:lightcoral;
+}
+
+/* Vanessa */
+#middlename {
+    color:lightcoral;
+}
+
+#oneliner {
+  color:pink;
+    font-size:65px;
+
+}
+
+.content {
+    font-family: monospace;
+    font-size: 25px;
+}
+
+
+#main {
+background-color: rgb(249, 211, 218);
+}
+
+#number {
+    color:skyblue;
+}
