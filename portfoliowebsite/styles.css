@@ -1,6 +1,6 @@
 body {
     /* color:6B717E; */
-    background-color:white;
+    background-color:black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:gray;
 }
@@ -12,7 +12,7 @@ div {
 /* menu */
 #navigationbar {
     text-align:right;
-    background-color: rgb(235, 112, 112);
+    background-color: pink;
     border-radius: 8px;
     position:sticky;
 }
@@ -22,13 +22,13 @@ a {
     text-decoration: none;
     font-family: monospace;
     font-size: 15px;
-        color:white;
+        color:black;
         
 }
 
 /* Resume button on nav bar */
 button {
-    background-color: skyblue;
+    background-color:coral;
     font-size: 16px;
     font-family: monospace;
     border-radius: 8px;
@@ -91,5 +91,5 @@ background-color: rgb(249, 211, 218);
 }
 
 #number {
-    color:skyblue;
+    color:coral;
 }
