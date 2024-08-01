@@ -2,6 +2,7 @@ body {
     /* color:6B717E; */
     background-color:black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
     color:white;
 }
 
@@ -21,20 +22,10 @@ div {
 a {
     text-decoration: none;
     font-family: monospace;
+    font-weight: light;
     font-size: 25px;
         color:white;
         
-}
-
-/* Resume button on nav bar */
-button {
-    background-color:black;
-    font-size: 25px;
-    font-family: monospace;
-    border-radius: 8px;
-   color:white;
-border:wheat;
-
 }
 
 a:hover, #number:hover {
@@ -52,6 +43,7 @@ button:hover {
     margin: 10px;
     margin-top: 100px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 /* "hi, my name is */
@@ -59,12 +51,28 @@ button:hover {
     font-family: monospace;
     font-size: 25px;
     color:green;
+
+    overflow: hidden;
+    border-right: .05em solid white;
+    white-space: nowrap;
+    width: 0;
+    animation: 
+      typing 1.5s steps(20, end) forwards;
+
+    /* display: inline-block; */
 }
 
 /* Chasity Davis */
 #fullname {
 font-size:70px;
 color:green;
+
+overflow: hidden;
+    border-right: .05em solid white;
+    white-space: nowrap;
+    width: 0;
+    animation: 
+      typing 1s steps(20, end) forwards;
 }
 
 /* Vanessa */
@@ -75,19 +83,39 @@ color:green;
 #oneliner {
   color:lightgreen;
     font-size:65px;
-}
 
-.introline {
     overflow: hidden;
-    border-right: .15em solid white;
+    border-right: .05em solid white;
     white-space: nowrap;
     width: 0;
     animation: 
       typing 1s steps(20, end) forwards;
 }
 
+/* .introline {
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    width: 0;
+    animation: 
+      typing 1s steps(20, end) forwards; */
+/* } */
+.typed {
+    display: inline-block;
+}
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+
+
 .content {
     font-family: monospace;
+    font-weight: light;
     font-size: 25px;
 }
 
@@ -100,11 +128,3 @@ background-color: rgb(72, 71, 71);
     color:greenyellow;
 }
 
-.container {
-    display: inline-block;
-}
-
-@keyframes introline {
-    from { width: 0 }
-    to { width: 100% }
-  }
