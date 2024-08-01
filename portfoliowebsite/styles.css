@@ -2,7 +2,7 @@ body {
     /* color:6B717E; */
     background-color:black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:gray;
+    color:white;
 }
 
 div {
@@ -12,7 +12,7 @@ div {
 /* menu */
 #navigationbar {
     text-align:right;
-    background-color: pink;
+    background-color: rgb(72, 71, 71);
     border-radius: 8px;
     position:sticky;
 }
@@ -21,15 +21,15 @@ div {
 a {
     text-decoration: none;
     font-family: monospace;
-    font-size: 15px;
-        color:black;
+    font-size: 25px;
+        color:white;
         
 }
 
 /* Resume button on nav bar */
 button {
-    background-color:coral;
-    font-size: 16px;
+    background-color:black;
+    font-size: 25px;
     font-family: monospace;
     border-radius: 8px;
    color:white;
@@ -37,47 +37,53 @@ border:wheat;
 
 }
 
-a:hover {
+a:hover, #number:hover {
     background-color: white;
-    color:lightcoral
+    color:blACK;
 }
 
 button:hover {
     background-color: white;
-    color:skyblue;
+    color:BLACK;
 }
 
 /* Hi...Davis */
 #opening {
-    /* background-color: black; */
     margin: 10px;
     margin-top: 100px;
-    /* color: bisque; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
+
 /* "hi, my name is */
 #hi { 
     font-family: monospace;
     font-size: 25px;
-    color:lightcoral;
+    color:green;
 }
 
 /* Chasity Davis */
 #fullname {
 font-size:70px;
-color:lightcoral;
+color:green;
 }
 
 /* Vanessa */
 #middlename {
-    color:lightcoral;
+    color:green;
 }
 
 #oneliner {
-  color:pink;
+  color:lightgreen;
     font-size:65px;
+}
 
+.introline {
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    width: 0;
+    animation: 
+      typing 1s steps(20, end) forwards;
 }
 
 .content {
@@ -87,9 +93,18 @@ color:lightcoral;
 
 
 #main {
-background-color: rgb(249, 211, 218);
+background-color: rgb(72, 71, 71);
 }
 
 #number {
-    color:coral;
+    color:greenyellow;
 }
+
+.container {
+    display: inline-block;
+}
+
+@keyframes introline {
+    from { width: 0 }
+    to { width: 100% }
+  }
