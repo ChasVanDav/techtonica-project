@@ -5,10 +5,6 @@ body {
     color:white;
 }
 
-div {
-    border-radius: 8px;
-}
-
 /* menu */
 #navigationbar {
     text-align:right;
@@ -17,7 +13,7 @@ div {
     white-space: nowrap;
     width: 0;
     animation: 
-      typing 5s steps(20, end) forwards;
+      typing 3s steps(10, end) forwards;
     animation-delay: 4s;
 }
 
@@ -29,11 +25,13 @@ a {
     font-weight: light;
     font-size: 22px;
 
-    color:white;     
+    color:lightgreen;    
+    
+    border-right: 10px;
 }
 
 #number {
-    color:greenyellow;
+    color:green;
 }
 
 
@@ -44,8 +42,8 @@ a:hover, #number:hover {
 
 /* Landing page div parent tag */
 #landingpage {
-    margin-top: 300px;
-    margin-bottom: 600px;
+    margin-top: 400px;
+    margin-bottom: 500px;
     
     font-family: monospace;
 }
@@ -95,7 +93,7 @@ overflow: hidden;
 
 @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 97% }
   }
 
 
@@ -105,8 +103,109 @@ margin: 100px;
 }
 
 
+img {
+    border-radius: 500px;
+
+    width:250px;
+    height:250px;
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
+
 .content {
     font-family: monospace;
     font-weight: light;
     font-size: 25px;
 }
+
+
+/* Media Queries */
+
+/* Mobile devices (up to 480px) */
+/* @media (max-width: 480px) {
+    #fullname {
+        font-size: 40px;
+    }
+    #oneliner {
+        font-size: 30px;
+    }
+    #hi {
+        font-size: 20px;
+    }
+    img {
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .content {
+        font-size: 18px;
+    }
+} */
+
+/* Tablets (481px to 768px) */
+/* @media (min-width: 481px) and (max-width: 768px) {
+    #fullname {
+        font-size: 50px;
+    }
+    #oneliner {
+        font-size: 45px;
+    }
+    #hi {
+        font-size: 22px;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .content {
+        font-size: 20px;
+    }
+} */
+
+/* Small laptops (769px to 1024px) */
+/* @media (min-width: 769px) and (max-width: 1024px) {
+    #fullname {
+        font-size: 60px;
+    }
+    #oneliner {
+        font-size: 55px;
+    }
+    #hi {
+        font-size: 25px;
+    }
+    img {
+        width: 220px;
+        height: 220px;
+        margin-top: 35px;
+        margin-left: 50px;
+    }
+    .content {
+        font-size: 23px;
+    }
+} */
+
+/* Desktops (1025px and above) */
+/* @media (min-width: 1025px) {
+    #fullname {
+        font-size: 70px;
+    }
+    #oneliner {
+        font-size: 65px;
+    }
+    #hi {
+        font-size: 27px;
+    }
+    img {
+        width: 250px;
+        height: 250px;
+        margin-top: 40px;
+        margin-left: 70px;
+    }
+    .content {
+        font-size: 25px;
+    }
+}  */
