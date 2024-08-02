@@ -1,5 +1,4 @@
 body {
-    /* color:6B717E; */
     background-color:black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
@@ -13,53 +12,48 @@ div {
 /* menu */
 #navigationbar {
     text-align:right;
-    background-color: rgb(72, 71, 71);
-    border-radius: 8px;
-    position:sticky;
 }
 
 /* nav bar href content */
 a {
     text-decoration: none;
+
     font-family: monospace;
     font-weight: light;
-    font-size: 25px;
-        color:white;
-        
+    font-size: 22px;
+
+    color:white;      
 }
+
+#number {
+    color:greenyellow;
+}
+
 
 a:hover, #number:hover {
-    background-color: white;
-    color:blACK;
+    background-color: gray;
+    color:white;
 }
 
-button:hover {
-    background-color: white;
-    color:BLACK;
-}
-
-/* Hi...Davis */
-#opening {
-    margin: 10px;
-    margin-top: 100px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+/* Landing page div parent tag */
+#landingpage {
+    margin-top: 500px;
+    margin-bottom: 500px;
+    
+    font-family: monospace;
 }
 
 /* "hi, my name is */
 #hi { 
     font-family: monospace;
-    font-size: 25px;
+    font-size: 27px;
     color:green;
 
     overflow: hidden;
-    border-right: .05em solid white;
     white-space: nowrap;
     width: 0;
     animation: 
-      typing 1.5s steps(20, end) forwards;
-
-    /* display: inline-block; */
+      typing 3s steps(20, end) forwards;
 }
 
 /* Chasity Davis */
@@ -68,11 +62,11 @@ font-size:70px;
 color:green;
 
 overflow: hidden;
-    border-right: .05em solid white;
     white-space: nowrap;
     width: 0;
     animation: 
-      typing 1s steps(20, end) forwards;
+      typing 3s steps(20, end) forwards;
+      animation-delay: .5s;
 }
 
 /* Vanessa */
@@ -85,32 +79,23 @@ overflow: hidden;
     font-size:65px;
 
     overflow: hidden;
-    border-right: .05em solid white;
     white-space: nowrap;
     width: 0;
     animation: 
-      typing 1s steps(20, end) forwards;
+      typing 3s steps(20, end) forwards;
+    animation-delay: 1.7s;
 }
-
-/* .introline {
-    overflow: hidden;
-    border-right: .15em solid white;
-    white-space: nowrap;
-    width: 0;
-    animation: 
-      typing 1s steps(20, end) forwards; */
-/* } */
-.typed {
-    display: inline-block;
-}
-
 
 @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 90% }
   }
 
 
+.typed {
+margin-left:1.5rem;
+margin-bottom: 100px;
+}
 
 
 .content {
@@ -118,13 +103,3 @@ overflow: hidden;
     font-weight: light;
     font-size: 25px;
 }
-
-
-#main {
-background-color: rgb(72, 71, 71);
-}
-
-#number {
-    color:greenyellow;
-}
-
