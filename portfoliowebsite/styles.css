@@ -42,8 +42,8 @@ a:hover, #number:hover {
 
 /* Landing page div parent tag */
 #landingpage {
-    margin-top: 400px;
-    margin-bottom: 500px;
+    margin-top: 500px;
+    margin-bottom: 700px;
     
     font-family: monospace;
 }
@@ -119,6 +119,51 @@ img {
     font-size: 25px;
 }
 
+
+.contact-form {
+    background-color:black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Limits the width of the form */
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form .form-group textarea {
+    resize: vertical; /* Allows vertical resizing */
+}
+
+.contact-form .form-group input[type="submit"] {
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form .form-group input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
 
 /* Media Queries */
 
