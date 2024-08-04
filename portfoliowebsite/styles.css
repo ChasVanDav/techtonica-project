@@ -1,23 +1,26 @@
 body {
-    background-color:black;
-    background-image: linear-gradient(black, rgb(64, 63, 63));
+    background-color:(black);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
-    font-size: 1.5rem;
-    color: lightgreen;
+    font-size: 1.7rem;
+    color: green;
+    text-align: left;
 }
 
+main {
+    color: black;
+}
 /* HEADER */
 #navigationbar {
     text-align:right;
     /* display:none; */
     
-    /* overflow: hidden;
+    overflow: hidden;
     white-space: nowrap;
     width: 0;
     animation: 
-      typing 3s steps(10, end) forwards;
-    animation-delay: 4s; */
+      typing 3s steps(1, end) forwards;
+    animation-delay: 2.2s;
 }
 
 /* nav bar href content */
@@ -26,9 +29,9 @@ a {
 
     font-family: monospace;
     font-weight: light;
-    font-size: 1rem;
+    font-size: 1.3rem;
 
-    color:lightgreen;    
+    color:green;    
 
 }
 
@@ -38,14 +41,14 @@ a {
 
 
 a:hover, #number:hover {
-    background-color: gray;
     color:white;
 }
 
 
 .social-icon {
     font-size: 1.5rem;
-    color: #0A66C2; /* linkedin color */
+    color: white;
+    background-color: #0A66C2;
     /* background-color: white;
     border-radius: 10px; */
     /* text-decoration: none; */
@@ -53,27 +56,29 @@ a:hover, #number:hover {
 
 .social-icon:hover {
     color: white;
-    background-color: #0A66C2;;
+    background-color:black;
 }
 
 .social-media {
     margin: 15px;
 }
 
+main {
+    margin-top: 280px;
+    margin-bottom: 400px;
+    margin-left: 50px;
+}
 
 /* Landing page div parent tag */
 #landingpage {
     font-size: 1.5rem;
     font-family: monospace;
     font-weight: light;
+    color:green;
 }
 
 /* "hi, my name is */
 #hi { 
-    font-family: monospace;
-    font-size: 1.5rem;
-    color:green;
-
     overflow: hidden;
     white-space: nowrap;
     width: 0;
@@ -83,10 +88,10 @@ a:hover, #number:hover {
 
 /* Chasity Davis */
 #fullname {
-font-size: 1.5rem;
-color:green;
 
-overflow: hidden;
+    color: lightgreen;
+
+    overflow: hidden;
     white-space: nowrap;
     width: 0;
     animation: 
@@ -94,21 +99,22 @@ overflow: hidden;
       animation-delay: .5s;
 }
 
-/* Vanessa */
-#middlename {
-    color:green;
-}
-
 #oneliner {
-  color:green;
-  font-size: 1.5rem;
-
     overflow: hidden;
     white-space: nowrap;
     width: 0;
     animation: 
       typing 3s steps(20, end) forwards;
-    animation-delay: 1.8s;
+    animation-delay: 1.5s;
+}
+
+#pitch {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: 
+      typing 3s steps(20, end) forwards;
+    animation-delay: 3s;
 }
 
 @keyframes typing {
@@ -117,15 +123,27 @@ overflow: hidden;
   }
 
 
-.typed {
+/* .typed {
 margin-left:1.5rem;
 margin: 100px;
-}
+} */
 
 
 img {
-    width:250px;
-    height:250px;
+
+    margin-bottom: 50px;
+
+    /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+ 
+  width:250px;
+
+  max-width: 100%;
+  height: auto;
+
+  border: 1px solid #ddd;
+    border-radius: 3.5px;
 }
 
 
@@ -179,4 +197,18 @@ img {
 
 .contact-form .form-group input[type="submit"]:hover {
     background-color: #4cae4c;
+}
+
+@media screen and (min-width:576px) {
+    body {
+        background-color: white;
+}
+}
+
+main {
+    background-color: white;
+}
+
+footer {
+    background-color: yellow;
 }
