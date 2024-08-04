@@ -1,20 +1,23 @@
 body {
     background-color:black;
+    background-image: linear-gradient(black, rgb(64, 63, 63));
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
-    color:white;
+    font-size: 1.5rem;
+    color: lightgreen;
 }
 
-/* menu */
+/* HEADER */
 #navigationbar {
     text-align:right;
+    /* display:none; */
     
-    overflow: hidden;
+    /* overflow: hidden;
     white-space: nowrap;
     width: 0;
     animation: 
       typing 3s steps(10, end) forwards;
-    animation-delay: 4s;
+    animation-delay: 4s; */
 }
 
 /* nav bar href content */
@@ -23,11 +26,10 @@ a {
 
     font-family: monospace;
     font-weight: light;
-    font-size: 22px;
+    font-size: 1rem;
 
     color:lightgreen;    
-    
-    border-right: 10px;
+
 }
 
 #number {
@@ -40,18 +42,36 @@ a:hover, #number:hover {
     color:white;
 }
 
+
+.social-icon {
+    font-size: 1.5rem;
+    color: #0A66C2; /* linkedin color */
+    /* background-color: white;
+    border-radius: 10px; */
+    /* text-decoration: none; */
+}
+
+.social-icon:hover {
+    color: white;
+    background-color: #0A66C2;;
+}
+
+.social-media {
+    margin: 15px;
+}
+
+
 /* Landing page div parent tag */
 #landingpage {
-    margin-top: 500px;
-    margin-bottom: 700px;
-    
+    font-size: 1.5rem;
     font-family: monospace;
+    font-weight: light;
 }
 
 /* "hi, my name is */
 #hi { 
     font-family: monospace;
-    font-size: 27px;
+    font-size: 1.5rem;
     color:green;
 
     overflow: hidden;
@@ -63,7 +83,7 @@ a:hover, #number:hover {
 
 /* Chasity Davis */
 #fullname {
-font-size:70px;
+font-size: 1.5rem;
 color:green;
 
 overflow: hidden;
@@ -80,8 +100,8 @@ overflow: hidden;
 }
 
 #oneliner {
-  color:lightgreen;
-    font-size:65px;
+  color:green;
+  font-size: 1.5rem;
 
     overflow: hidden;
     white-space: nowrap;
@@ -104,19 +124,15 @@ margin: 100px;
 
 
 img {
-    border-radius: 500px;
-
     width:250px;
     height:250px;
-    margin-top: 40px;
-    margin-left: 70px;
 }
 
 
 .content {
     font-family: monospace;
     font-weight: light;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 
@@ -164,93 +180,3 @@ img {
 .contact-form .form-group input[type="submit"]:hover {
     background-color: #4cae4c;
 }
-
-/* Media Queries */
-
-/* Mobile devices (up to 480px) */
-/* @media (max-width: 480px) {
-    #fullname {
-        font-size: 40px;
-    }
-    #oneliner {
-        font-size: 30px;
-    }
-    #hi {
-        font-size: 20px;
-    }
-    img {
-        width: 150px;
-        height: 150px;
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-    .content {
-        font-size: 18px;
-    }
-} */
-
-/* Tablets (481px to 768px) */
-/* @media (min-width: 481px) and (max-width: 768px) {
-    #fullname {
-        font-size: 50px;
-    }
-    #oneliner {
-        font-size: 45px;
-    }
-    #hi {
-        font-size: 22px;
-    }
-    img {
-        width: 200px;
-        height: 200px;
-        margin-top: 30px;
-        margin-left: 30px;
-    }
-    .content {
-        font-size: 20px;
-    }
-} */
-
-/* Small laptops (769px to 1024px) */
-/* @media (min-width: 769px) and (max-width: 1024px) {
-    #fullname {
-        font-size: 60px;
-    }
-    #oneliner {
-        font-size: 55px;
-    }
-    #hi {
-        font-size: 25px;
-    }
-    img {
-        width: 220px;
-        height: 220px;
-        margin-top: 35px;
-        margin-left: 50px;
-    }
-    .content {
-        font-size: 23px;
-    }
-} */
-
-/* Desktops (1025px and above) */
-/* @media (min-width: 1025px) {
-    #fullname {
-        font-size: 70px;
-    }
-    #oneliner {
-        font-size: 65px;
-    }
-    #hi {
-        font-size: 27px;
-    }
-    img {
-        width: 250px;
-        height: 250px;
-        margin-top: 40px;
-        margin-left: 70px;
-    }
-    .content {
-        font-size: 25px;
-    }
-}  */
