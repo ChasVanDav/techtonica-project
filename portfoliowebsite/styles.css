@@ -1,5 +1,5 @@
 body {
-    background-color:(black);
+    background-color:black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
     font-size: 1.7rem;
@@ -11,60 +11,65 @@ main {
     color: black;
 }
 /* HEADER */
+
 #navigationbar {
-    text-align:right;
-    /* display:none; */
-    
-    overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    animation: 
-      typing 3s steps(1, end) forwards;
-    animation-delay: 2.2s;
+    position:fixed;
+    top:0;
+
+    text-decoration: none;
 }
 
-/* nav bar href content */
-a {
+#navigationbar {
+     text-align:right; 
+    overflow: hidden;
+    /* white-space: nowrap; */
+    width: 0;
+    animation: 
+      typing 1s steps(1, end) forwards;
+    animation-delay: 5.3s;
+}
+
+.navcontent {
     text-decoration: none;
 
     font-family: monospace;
     font-weight: light;
     font-size: 1.3rem;
 
-    color:green;    
-
+    color:green;  
+    background-color: black;
 }
 
-#number {
+/* //SOCIAL MEDIA */
+.linkedin {
     color:green;
+    background-color: black;
+   
 }
 
-
-a:hover, #number:hover {
-    color:white;
-}
-
-
-.social-icon {
-    font-size: 1.5rem;
+.linkedin:hover {
     color: white;
     background-color: #0A66C2;
-    /* background-color: white;
-    border-radius: 10px; */
-    /* text-decoration: none; */
+    
 }
 
-.social-icon:hover {
+.github {
+    
+    color:green;
+    background-color: black;
+}
+
+.github:hover {
     color: white;
-    background-color:black;
 }
 
 .social-media {
     margin: 15px;
 }
 
+/* //MAIN CONTENT */
 main {
-    margin-top: 280px;
+    margin-top: 200px;
     margin-bottom: 400px;
     margin-left: 50px;
 }
@@ -77,7 +82,7 @@ main {
     color:green;
 }
 
-/* "hi, my name is */
+/* //"hi, my name is... */
 #hi { 
     overflow: hidden;
     white-space: nowrap;
@@ -86,25 +91,12 @@ main {
       typing 3s steps(20, end) forwards;
 }
 
-/* Chasity Davis */
-#fullname {
-
-    color: lightgreen;
-
-    overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    animation: 
-      typing 3s steps(20, end) forwards;
-      animation-delay: .5s;
-}
-
 #oneliner {
     overflow: hidden;
     white-space: nowrap;
     width: 0;
     animation: 
-      typing 3s steps(20, end) forwards;
+      typing 2.5s steps(20, end) forwards;
     animation-delay: 1.5s;
 }
 
@@ -113,8 +105,18 @@ main {
     white-space: nowrap;
     width: 0;
     animation: 
-      typing 3s steps(20, end) forwards;
+      typing 2.5s steps(20, end) forwards;
     animation-delay: 3s;
+}
+
+#contact {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: 
+      typing 2.5s steps(20, end) forwards;
+    animation-delay: 4.2s;
+
 }
 
 @keyframes typing {
@@ -123,17 +125,15 @@ main {
   }
 
 
-/* .typed {
+.typed {
 margin-left:1.5rem;
-margin: 100px;
-} */
+margin: 50px;
+}
 
 
 img {
+margin-bottom: 50px;
 
-    margin-bottom: 50px;
-
-    /* display: block; */
   margin-left: auto;
   margin-right: auto;
  
@@ -150,7 +150,9 @@ img {
 .content {
     font-family: monospace;
     font-weight: light;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+
+    color:white;
 }
 
 
@@ -174,6 +176,11 @@ img {
 .contact-form .form-group label {
     display: block;
     margin-bottom: 5px;
+
+    font-family: monospace;
+    font-size: 20px;
+
+    color:green;
 }
 
 .contact-form .form-group input,
@@ -182,6 +189,9 @@ img {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+
+    font-family: monospace;
+    color: black;
 }
 
 .contact-form .form-group textarea {
@@ -189,26 +199,27 @@ img {
 }
 
 .contact-form .form-group input[type="submit"] {
-    background-color: #5cb85c;
+    font-size: 20px;
+    background-color: green;
+
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
 .contact-form .form-group input[type="submit"]:hover {
-    background-color: #4cae4c;
+    background-color: black;
+    color:green;
+    border: 1px solid white;
 }
 
-@media screen and (min-width:576px) {
+@media (min-width: 1081px) {
     body {
-        background-color: white;
-}
-}
-
-main {
-    background-color: white;
-}
-
-footer {
-    background-color: yellow;
-}
+      background-color: red;
+    }
+  }
+  @media (min-width: 1200px) {
+    body {
+      background-color: green;
+    }
+  }
