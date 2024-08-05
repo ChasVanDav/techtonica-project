@@ -219,6 +219,13 @@ margin-bottom: 50px;
     border: 1px solid white;
 }
 
+footer {
+    text-align: center;
+    font-family: monospace;
+    font-weight: light;
+    color:white;
+}
+
 @media (min-width: 375px) {
     body {
         background-color: black;
