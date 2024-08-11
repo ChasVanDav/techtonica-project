@@ -7,7 +7,7 @@ let resetBtn = document.querySelector("#reset-button");
 let heads = 0;
 let tails = 0;
 
-//
+//add event listener, use math.random for random number
 flipBtn.addEventListener("click", () => {
     let i = Math.floor(Math.random() * 2);
     coin.style.animation = "none";
