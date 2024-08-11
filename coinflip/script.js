@@ -1,26 +1,54 @@
-// add event listener to coin using '.onclick'
+//grab the coins and buttons
+let coin = document.querySelector(".coin");
+let flipBtn = document.querySelector("#flip-button");
+let resetBtn = document.querySelector("#reset-button");
 
-document.getElementById("coin").onclick = function() {
-    // math.random() generates random numbers between 0 and 1.
-    // assign 0~0.5 to "isHeads"
-    let isHeads = Math.random() < 0.5;
+//initialize heads, tails counter to zero
+let heads = 0;
+let tails = 0;
 
-    let coinImage = document.getElementById("coin");
-    
-    //classList.add initialize flipping
-    coinImage.classList.add('flipping');
-    setTimeout(() => {
-        // coinImage.src = isHeads ? "" : "";
-        //call the result element and assign value of "heads" or "tails" 
-        // based on result of 'isHeads' --> true = "heads" abd false = "tails"
-        document.getElementById("result").innerText = isHeads ? "Heads" : "Tails";
-        // classList.remove to end flipping and reset
-        coinImage.classList.remove('flipping');
-    }, 1000);
-};
+//
+flipBtn.addEventListener("click", () => {
+    let i = Math.floor(Math.random() * 2);
+    coin.style.animation = "none";
+    if(i){
+        setTimeout(function(){
+            coin.style.animation = "spin-heads 3s forwards";
+        }, 100);
+        heads++;
+    }
+
+    else{
+        setTimeout(function(){
+            coin.style.animation = "spin-tails 3s forwards";
+        }, 100);
+        tails++;
+    }
+    setTimeout(updateStats, 3000);
+    disableButton();
+});
+
+function updateStats(){
+    document.querySelector("#heads-count").textContent = `Heads: ${heads}`;
+    document.querySelector("#tails-count").textContent = `Tails: ${tails}`;
+}
+
+//disable flip button while coin flips
+
+function disableButton(){
+    flipBtn.disabled = true;
+    setTimeout(function(){
+    flipBtn.disabled = false;
+    }, 3000);
+}
+
+//activate the reset button
+resetBtn.addEventListener("click",() =>{
+    coin.style.animation = "none";
+    heads = 0;
+    tails = 0;
+    updateStats();
+});
 
 
-// Current issues:
-// the timing between the end of the flipping and the display of the results are off
-// I can't get the tail to show for the result let alone while flipping
-// why does it flip twice???
+//source: https://www.youtube.com/watch?v=QQh8PNp8KcQ
