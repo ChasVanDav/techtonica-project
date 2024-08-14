@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import './App.css' 
 import './style.css'
 import headsImage from "./assets/quarter_heads.jpg"
 import tailsImage from "./assets/quarter_tails.png"
@@ -17,15 +18,16 @@ const App = () => {
     
     setTimeout(() => {
       setAnimation(result ? 'spin-heads 3s forwards' : 'spin-tails 3s forwards');
+    
+    }, 100);
+
+    setTimeout(() => {
+      setIsFlipping(false);
       if (result) {
         setHeads(heads + 1);
       } else {
         setTails(tails + 1);
       }
-    }, 100);
-
-    setTimeout(() => {
-      setIsFlipping(false);
     }, 3000);
   };
 
@@ -50,10 +52,10 @@ const App = () => {
         <p>Tails: {tails}</p>
       </div>
       <div className="buttons">
-        <button onClick={flipCoin} disabled={isFlipping}>
+        <button id="flip-button" onClick={flipCoin} disabled={isFlipping}>
           Flip
         </button>
-        <button onClick={resetCount}>
+        <button id="reset-button" onClick={resetCount}>
           Reset
         </button>
       </div>
