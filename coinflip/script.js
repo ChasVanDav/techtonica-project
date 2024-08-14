@@ -9,6 +9,7 @@ let tails = 0;
 
 //add event listener, use math.random for random number
 flipBtn.addEventListener("click", () => {
+    //multiply by 2 get whole numbers
     let i = Math.floor(Math.random() * 2);
     coin.style.animation = "none";
     if(i){
@@ -28,6 +29,7 @@ flipBtn.addEventListener("click", () => {
     disableButton();
 });
 
+//update head tails count
 function updateStats(){
     document.querySelector("#heads-count").textContent = `Heads: ${heads}`;
     document.querySelector("#tails-count").textContent = `Tails: ${tails}`;
