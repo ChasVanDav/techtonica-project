@@ -19,7 +19,27 @@ app.get('/', (req, res) => {
 // Example route for fetching event details
 app.get('/event/:id', (req, res) => {
   const eventID = req.params.id;
-  fetch(`https://www.eventbriteapi.com/v3/events/${eventID}/?token=${oauthToken}`)
+  fetch(`https://www.eventbriteapi.com/v3/events/${eventID}`, { 
+    headers: {
+    'Authorization': `Bearer ${oauthToken}`,
+    'Content-Type': 'application/json'
+    }
+});
+  .then(response => response.json())
+  .then(data => res.json(data))
+  .catch(error => res.status(500).json({error: error.message}));
+});
+
+
+// Example route for fetching event details
+app.get('/event/:id', (req, res) => {
+  const eventID = req.params.id;
+  fetch(`https://www.eventbriteapi.com/v3/events/${eventID}/?expand=venue`, { 
+    headers: {
+    'Authorization': `Bearer ${oauthToken}`,
+    'Content-Type': 'application/json'
+    }
+});
   .then(response => response.json())
   .then(data => res.json(data))
   .catch(error => res.status(500).json({error: error.message}));
