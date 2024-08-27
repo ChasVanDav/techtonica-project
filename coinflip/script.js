@@ -12,6 +12,7 @@ flipBtn.addEventListener("click", () => {
     //multiply by 2 get whole numbers
     let i = Math.floor(Math.random() * 2);
     coin.style.animation = "none";
+    // if(i) statement is boolean 0=false, 1=true
     if(i){
         setTimeout(function(){
             coin.style.animation = "spin-heads 3s forwards";
