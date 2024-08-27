@@ -17,5 +17,3 @@ function findLargerNumber(num1, num2) {
 
 console.log(findLargerNumber(5, 1));//return 5
 console.log(findLargerNumber(1, 7));//return 7
-
-
