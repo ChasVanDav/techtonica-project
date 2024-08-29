@@ -3,7 +3,7 @@ const app = express()
 const port = 3000
 
 const apiToken = '2a4b9240693bc44d971fbf9becc24fef';
-let cityName = '';
+const cityName = '';
 
 fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiToken}`)
   .then(response => response.json())
