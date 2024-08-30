@@ -11,8 +11,8 @@ const apiToken = 'a798fd84a2c6e6b9e00c84561c872b9c';
 
 // const apiToken = process.env.apikey
 
-app.get('/', async (req, res) => {
-  const cityName = req.query.city; //setting the default city //|| 'New York'
+app.get('/', (req, res) => {
+  const cityName = req.query.city; //setting the default city //
  
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiToken}&units=imperial`)
   .then(response => response.json())

@@ -7,7 +7,7 @@ function App() {
   const [weather, setWeather] = useState(null);
 
   const handleSearch = () => {
-    fetch(`/weather?city=${city}`)
+  fetch(`http://localhost:3000?city=${encodeURI(city)}`)
       .then(response => response.json())
       .then(data => setWeather(data))
       .catch(error => console.error('Error:', error));
