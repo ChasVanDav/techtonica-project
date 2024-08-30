@@ -2,25 +2,21 @@ import express from 'express'
 const app = express()
 const port = 3000
 
-const apiToken = '2a4b9240693bc44d971fbf9becc24fef';
-const cityName = '';
+// const apiToken = 'a798fd84a2c6e6b9e00c84561c872b9c'; 
+const cityName = 'New York';
 
-fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiToken}`)
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error(error));
+const apiToken = process.env.apikey
 
 app.get('/', (req, res) => {
-  res.send('The Vanessa Weather App Homepage!')
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiToken}&units=imperial`)
+  .then(response => response.json())
+  .then(data => res.send(data))
+  .catch(error => res.send(error));
 })
 
-app.get('/weather', (req, res) => {
-  req.query.cityName;
-});
-
-
-
-
+// app.get('/:', (req, res) => {
+//   req.query.cityName;
+// });
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`)
