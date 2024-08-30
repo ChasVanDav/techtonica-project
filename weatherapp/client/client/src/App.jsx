@@ -5,8 +5,9 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>The Vaness Weather App Frontend Under Construction</div>
+    <div>The Vanessa Weather App Frontend Under Construction</div>
+    //
   )
 }
 
-export default App
+export default App;
