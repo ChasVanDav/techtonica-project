@@ -1,9 +1,9 @@
 #root {
 
   color:white;
-  background-color: rgba(198, 188, 235, 0.85);
+  background-color: rgba(198, 188, 235, 0.92);
   width: 50%;
-  height: 25%;
+  height: 100%;
   background-position: center;
   display: flex;
   justify-content: center;
@@ -15,9 +15,9 @@
 body {
   height: 100vh;
   background-image: url('weatherimages.jpg');
-  background-repeat: no-repeat;
-  background-position: center; /* Center the image */
-  background-size: 100% 100%;
+  background-repeat: repeat repeat;
+  background-position:left; /* Center the image */
+  background-size:auto;
   box-sizing: border-box;
   display: flex;
   /* padding: 20px; */
