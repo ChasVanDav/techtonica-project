@@ -7,9 +7,9 @@ const port = 3000;
 
 app.use(cors());
 
-// const apiToken = 'a798fd84a2c6e6b9e00c84561c872b9c'; 
+const apiToken = 'a798fd84a2c6e6b9e00c84561c872b9c'; 
 
-const apiToken = process.env.apiToken;
+// const apiToken = process.env.apiToken;
 
 app.get('/', (req, res) => {
   const cityName = req.query.city || 'Honolulu'; //setting the default city //

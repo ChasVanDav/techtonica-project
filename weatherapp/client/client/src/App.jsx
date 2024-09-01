@@ -29,7 +29,7 @@ function App() {
   const errorStyle={color:"red"}
   return (
     <div>
-      <h1>Weather App</h1>
+      <h1>Weather Report</h1>
       <input 
         type="text" 
         value={city} 
@@ -44,14 +44,15 @@ function App() {
       )}
       {weather && (
         <div>
-          <h2>Weather in {weather.name}</h2>
-          {/* math.round */}
-          <p>Temperature: {weather.main.temp}°F</p>
-          <p>Humidity: {weather.main.humidity}</p>
-          {/* math.round */}
-          <p>Wind Speed: {weather.wind.speed}</p>
-          <p>Condition: {weather.weather[0].description}</p>
           <img src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt={`An icon image of ${weather.weather[0].description}`} />
+          <h2>City: {weather.name}</h2>
+          <h2>Temperature: {weather.main.temp}°F</h2>
+          <h2>Condition: {weather.weather[0].description}</h2>
+          {/* math.round */}
+          <h2>Humidity: {weather.main.humidity}</h2>
+          <h2>Wind Speed: {weather.wind.speed}</h2>
+          {/* math.round */}
+
         </div>
       )}
     </div>
