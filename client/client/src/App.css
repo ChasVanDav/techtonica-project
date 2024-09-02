@@ -1,0 +1,36 @@
+#root {
+
+  color:white;
+  background-color: rgba(198, 188, 235, 0.92);
+  width: 50%;
+  height: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px; 
+  box-sizing: border-box;
+  margin:5% auto auto;
+}
+
+body {
+  height: 100vh;
+  background-image: url('weatherimages.jpg');
+  background-repeat: repeat repeat;
+  background-position:left;
+  background-size:auto;
+  box-sizing: border-box;
+  display: flex;
+}
+
+* {
+  font-family: sans-serif;
+  color:cornflowerblue;
+}
+
+input {
+font-size: larger;
+}
+
+button {
+font-size: larger;
+}
