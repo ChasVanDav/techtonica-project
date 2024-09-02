@@ -1,7 +1,4 @@
 #root {
-
-  color:white;
-  background-color: rgba(198, 188, 235, 0.92);
   width: 50%;
   height: 100%;
   background-position: center;
@@ -33,4 +30,28 @@ font-size: larger;
 
 button {
 font-size: larger;
+}
+
+/* RESPONSIVENESS*/
+@media (max-width: 1400px) {
+  * {
+    color:cornflowerblue;
+  }
+}
+@media (max-width: 1200px) {
+  * {
+    color:white;
+  }
+  
+}
+@media (max-width: 950px) {
+  * {
+    color:black;
+  } 
+}
+@media (max-width: 750px) {
+  #root{
+  width: 100%;
+  background-image: none;
+  }
 }
