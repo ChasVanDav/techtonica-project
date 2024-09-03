@@ -48,7 +48,7 @@ function App() {
       {weather && (
         <div>
           <img id="icon" src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt={`An icon image of ${weather.weather[0].description}`} />
-          <h2>City: {weather.name}</h2>
+          <h2>Current city: {weather.name}</h2>
           <h2>Temperature: {weather.main.temp}°F</h2>
           <h2>Condition: {weather.weather[0].description}</h2>
           <h2>Humidity: {weather.main.humidity}%</h2>
