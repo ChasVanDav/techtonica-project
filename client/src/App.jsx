@@ -29,7 +29,7 @@ function App() {
   const errorStyle={color:"red"}
   return (
     <div id={"weather"}>
-      <img src="/unicorn.jpg" alt="image of unicorn with rainbow hair" />
+      <img src="./unicorn.jpg" alt="image of unicorn with rainbow hair" />
       <h1>Unicorn Weather</h1>  
       <input 
         type="text" 
