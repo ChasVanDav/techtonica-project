@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
+import unicornImage from './unicorn.jpg';
+
 
 
 function App() {
@@ -29,7 +31,7 @@ function App() {
   const errorStyle={color:"red"}
   return (
     <div id={"weather"}>
-      <img src="./unicorn.jpg" alt="image of unicorn with rainbow hair" />
+      <img src={unicornImage} alt={"image of unicorn with rainbow hair"} />
       <h1>Unicorn Weather</h1>  
       <input 
         type="text" 
@@ -45,7 +47,7 @@ function App() {
       )}
       {weather && (
         <div>
-          <img src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt={`An icon image of ${weather.weather[0].description}`} />
+          <img id="icon" src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt={`An icon image of ${weather.weather[0].description}`} />
           <h2>City: {weather.name}</h2>
           <h2>Temperature: {weather.main.temp}°F</h2>
           <h2>Condition: {weather.weather[0].description}</h2>

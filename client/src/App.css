@@ -2,21 +2,19 @@
   background-color:#cdbee6;
   width: 80%;
   height: 100%;
-  background-position: center;
   display: flex;
-  justify-content: center;
   padding: 20px; 
   box-sizing: border-box;
   margin:5% auto auto auto;
   font-size: 30px;
+  text-align: center;
 }
 
 body {
   height: 100vh;
   background-image: url('weatherimages.jpg');
   background-repeat: repeat repeat;
-  background-position:left;
-  background-size:auto;
+  background-position:center;
   box-sizing: border-box;
   display: flex;
   font-family: sans-serif;
@@ -30,7 +28,7 @@ body {
 }
 
 input {
-  width: 75%;
+  width: 60%;
   font-size: 30px;
   color:gray;
 }
@@ -45,6 +43,12 @@ button {
 
 img {
   width: 40%;
+  border: solid gray;
+}
+
+#icon {
+  width: 40%;
+  border: none;
 }
 
 
