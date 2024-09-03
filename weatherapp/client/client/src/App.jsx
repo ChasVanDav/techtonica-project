@@ -28,8 +28,8 @@ function App() {
   };
   const errorStyle={color:"red"}
   return (
-    <div>
-      <h1>Weather Report</h1>
+    <div id={"weather"}>
+      <h1>Unicorn Weather</h1>  
       <input 
         type="text" 
         value={city} 
@@ -48,10 +48,8 @@ function App() {
           <h2>City: {weather.name}</h2>
           <h2>Temperature: {weather.main.temp}°F</h2>
           <h2>Condition: {weather.weather[0].description}</h2>
-          {/* math.round */}
           <h2>Humidity: {weather.main.humidity}</h2>
           <h2>Wind Speed: {weather.wind.speed}</h2>
-          {/* math.round */}
 
         </div>
       )}
