@@ -1,0 +1,246 @@
+body {
+    background-color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 1.7rem;
+    color: green;
+    text-align: left;
+}
+
+main {
+    color: black;
+}
+/* HEADER */
+
+#navigationbar {
+    position:fixed;
+    top:0;
+
+    text-decoration: none;
+}
+
+#navigationbar {
+     text-align:right; 
+    overflow: hidden;
+    /* white-space: nowrap; */
+    width: 0;
+    animation: 
+      typing 1s steps(1, end) forwards;
+    animation-delay: 5.3s;
+}
+
+.navcontent {
+    text-decoration: none;
+
+    font-family: monospace;
+    font-weight: light;
+    font-size: 1.3rem;
+
+    color:green;  
+    background-color: black;
+}
+
+/* //SOCIAL MEDIA */
+.linkedin {
+    color:green;
+    background-color: black;
+   
+}
+
+.linkedin:hover {
+    color: white;
+    background-color: #0A66C2;
+    
+}
+
+.github {
+    
+    color:green;
+    background-color: black;
+}
+
+.github:hover {
+    color: white;
+}
+
+.social-media {
+    margin: 15px;
+}
+
+/* //MAIN CONTENT */
+main {
+    margin-top: 200px;
+    margin-bottom: 400px;
+    margin-left: 50px;
+}
+
+/* Landing page div parent tag */
+#landingpage {
+    font-size: 1.5rem;
+    font-family: monospace;
+    font-weight: light;
+    color:green;
+}
+
+/* //"hi, my name is... */
+#hi { 
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: 
+      typing 3s steps(20, end) forwards;
+}
+
+#oneliner {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: 
+      typing 2.5s steps(20, end) forwards;
+    animation-delay: 1.5s;
+}
+
+#pitch {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: 
+      typing 2.5s steps(20, end) forwards;
+    animation-delay: 3s;
+}
+
+.content {
+    margin: 50px;
+}
+
+#contact {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: 
+      typing 2.5s steps(20, end) forwards;
+    animation-delay: 4.2s;
+
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 97% }
+  }
+
+
+.typed {
+margin-left:1.5rem;
+margin: 50px;
+}
+
+
+img {
+margin-bottom: 50px;
+
+  margin-left: auto;
+  margin-right: auto;
+ 
+  width:250px;
+
+  max-width: 100%;
+  height: auto;
+
+  border: 1px solid #ddd;
+    border-radius: 3.5px;
+}
+
+
+.content {
+    font-family: monospace;
+    font-weight: light;
+    font-size: 1.2rem;
+
+    color:white;
+}
+
+
+.contact-form {
+    background-color:black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Limits the width of the form */
+    margin-left: 100px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+
+    font-family: monospace;
+    font-size: 20px;
+
+    color:green;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    font-family: monospace;
+    color: black;
+}
+
+.contact-form .form-group textarea {
+    resize: vertical; /* Allows vertical resizing */
+}
+
+.contact-form .form-group input[type="submit"] {
+    font-size: 20px;
+    background-color: green;
+
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form .form-group input[type="submit"]:hover {
+    background-color: black;
+    color:green;
+    border: 1px solid white;
+}
+
+footer {
+    text-align: center;
+    font-family: monospace;
+    font-weight: light;
+    color:white;
+}
+
+@media (min-width: 375px) {
+    body {
+        background-color: black;
+    }
+@media (min-width: 768px) {
+    body {
+        background-color: black;
+    }
+@media (min-width: 1081px) {
+    body {
+        background-color: black;
+    }
+  }
+  @media (min-width: 1200px) {
+    body {
+      background-color: black;
+    }
+  }
