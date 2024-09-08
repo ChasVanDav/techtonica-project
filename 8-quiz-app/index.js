@@ -1,3 +1,5 @@
+const express = require('express');
+const cors = require('cors');
 const fetch = require('node-fetch');
 const { Client } = require('pg');
 require('dotenv').config();
@@ -21,13 +23,12 @@ async function fetchDataAndStore() {
     console.log('API Data:', data);
 
 
-    let queryString = 'INSERT INTO mytable (question, correct_answer, incorrect_answers) VALUES'
-
-
-    // Insert data into the PostgreSQL database
+    // Insert fetched data into the PostgreSQL database
+     let queryString = 'INSERT INTO mytable (question, correct_answer, incorrect_answers) VALUES'
     for (const item of data.results) {
       queryString+= `('${item.question}', '${item.correct_answer}', '${JSON.stringify(item.incorrect_answers)}'),`
     }
+      //remove last comma from each row
       queryString = queryString.slice(0, -1);
       console.log(queryString);
 
