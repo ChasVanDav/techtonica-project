@@ -1,5 +1,3 @@
-const express = require('express');
-const cors = require('cors');
 const fetch = require('node-fetch');
 const { Client } = require('pg');
 require('dotenv').config();
@@ -11,6 +9,7 @@ const client = new Client({
   database: process.env.PGDATABASE,
   port: process.env.PGPORT,
 });
+
 
 async function fetchDataAndStore() {
   try {
