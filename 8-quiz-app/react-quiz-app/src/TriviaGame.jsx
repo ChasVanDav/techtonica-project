@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import he from 'he';
 
 function TriviaGame() {
   const [questions, setQuestions] = useState([]);
@@ -14,7 +15,16 @@ function TriviaGame() {
         }
         return response.json();
       })
-      .then(data => setQuestions(data))
+      .then(data => {
+        // Decode HTML entities in questions and answers
+        const decodedQuestions = data.map(question => ({
+          ...question,
+          question: he.decode(question.question),
+          correct_answer: he.decode(question.correct_answer),
+          incorrect_answers: question.incorrect_answers.map(answer => he.decode(answer))
+        }));
+        setQuestions(decodedQuestions);
+      })
       .catch(error => {
         console.error('Error fetching data:', error);
         setError(error.message);
@@ -37,8 +47,8 @@ function TriviaGame() {
     });
     setScore(newScore);
   };
-//this fixed the error!!!! now questions display :)
-  if (error && !questions) {
+
+  if (error && !questions.length) {
     return <p>Error: {error}</p>;
   }
 
@@ -46,13 +56,10 @@ function TriviaGame() {
     return <p>No questions available</p>;
   }
 
-  
-
   return (
     <div className="trivia-game">
       <form>
         {questions.map((question, index) => {
-          
           const allAnswers = [question.correct_answer, ...question.incorrect_answers].sort();
 
           return (
