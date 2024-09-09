@@ -37,8 +37,8 @@ function TriviaGame() {
     });
     setScore(newScore);
   };
-
-  if (error) {
+//this fixed the error!!!! now questions display :)
+  if (error && !questions) {
     return <p>Error: {error}</p>;
   }
 
@@ -46,9 +46,10 @@ function TriviaGame() {
     return <p>No questions available</p>;
   }
 
+  
+
   return (
     <div className="trivia-game">
-      <h2>Trivia Game</h2>
       <form>
         {questions.map((question, index) => {
           
