@@ -8,7 +8,6 @@ const app = express();
 app.use(cors());
 
 dotenv.config();
-const PORT = process.env.PORT
 
 //handle json objects
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -25,25 +24,33 @@ app.get("/api/books", (req, res) => {
   });
 
 //GET request by id
-app.get("", (req, res) => {
+// app.get("/api/books/:id", (req, res) => {
 
-});
+// });
 
 //PUT request by id
-app.put("", (req, res) => {
+// app.put("/api/books/:id", (req, res) => {
 
-});
+// });
 
 //POST request
-app.post("", (req, res) => {
-
+app.post("/api/books", (req, res) => {
+    const newBook = {
+        id: books.length + 1,
+        title: req.body.title,
+        author: req.body.author,
+        format: req.body.format
+    };
+    books.push(newBook);
+    res.status(201).json(newBook);
 });
 
 //Delete request
-app.delete("", (req, res) => {
+// app.delete("/api/books/:id", (req, res) => {
 
-});
+// });
 
 //start the server
+const PORT = process.env.PORT
 app.listen(PORT, () => console.log(`Listening on Vanessa's http://localhost:${PORT}`));
 
