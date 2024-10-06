@@ -19,11 +19,31 @@ app.get('/', (req, res) =>{
     res.send("Hello Homepage!");
 });
 
-//connect to book data book.js
+//GET request for all books
 app.get("/api/books", (req, res) => {
     res.json(books);
   });
 
-  //start the server
-  app.listen(PORT, () => console.log(`Listening on Vanessa's http://localhost:${PORT}`));
+//GET request by id
+app.get("", (req, res) => {
+
+});
+
+//PUT request by id
+app.put("", (req, res) => {
+
+});
+
+//POST request
+app.post("", (req, res) => {
+
+});
+
+//Delete request
+app.delete("", (req, res) => {
+
+});
+
+//start the server
+app.listen(PORT, () => console.log(`Listening on Vanessa's http://localhost:${PORT}`));
 
