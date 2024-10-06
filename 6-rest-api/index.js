@@ -10,18 +10,20 @@ app.use(cors());
 dotenv.config();
 const PORT = process.env.PORT
 
-
+//handle json objects
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+//root
 app.get('/', (req, res) =>{
     res.send("Hello Homepage!");
 });
 
+//connect to book data book.js
 app.get("/api/books", (req, res) => {
     res.json(books);
   });
 
   //start the server
-  app.listen(port, () => console.log(`Listening on Vanessa's http://localhost:${PORT}`));
+  app.listen(PORT, () => console.log(`Listening on Vanessa's http://localhost:${PORT}`));
 
