@@ -18,6 +18,7 @@ async function fetchDataAndStore() {
 
     // Fetch data from the API
     const response = await fetch('https://opentdb.com/api.php?amount=5&category=26');
+    //parse json data
     const data = await response.json();
     console.log('API Data:', data);
 

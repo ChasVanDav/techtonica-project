@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+//imported he libarary to handle decoding data that have html entities
 import he from 'he';
 
 function TriviaGame() {
