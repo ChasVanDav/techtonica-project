@@ -24,14 +24,31 @@ app.get("/api/books", (req, res) => {
   });
 
 //GET request by id
-// app.get("/api/books/:id", (req, res) => {
-
-// });
+app.get("/api/books/:id", (req, res) => {
+    const bookID = req.params.id;
+    const book = books.find(b => b.id === bookID);
+    if(!book) {
+        return res.status(404).json({message: "Book not found"});
+    }
+    res.json(book);
+});
 
 //PUT request by id
-// app.put("/api/books/:id", (req, res) => {
+app.put("/api/books/:id", (req, res) => {
+    const bookID = req.params.id;
+    const book = books.find(b => b.id === bookID); 
 
-// });
+    if (!book) {
+        return res.status(404).json({ message: "Book not found" });
+    }
+
+    book.title = req.body.title || book.title;
+    book.author = req.body.author || book.author;
+    book.format = req.body.format || book.format;
+
+    res.json(book); 
+});
+
 
 //POST request
 app.post("/api/books", (req, res) => {
@@ -46,9 +63,17 @@ app.post("/api/books", (req, res) => {
 });
 
 //Delete request
-// app.delete("/api/books/:id", (req, res) => {
+app.delete("/api/books/:id", (req, res) => {
+    const bookID = req.params.id;
+    const bookIndex = books.findIndex(b => b.id === bookID);
+    if (bookIndex === -1) {
+        return res.status(404).json({ message: "Book not found" });
+    }
 
-// });
+    books.splice(bookIndex, 1);
+
+    res.status(204).send();
+});
 
 //start the server
 const PORT = process.env.PORT
