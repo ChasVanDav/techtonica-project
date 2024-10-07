@@ -7,6 +7,8 @@ import dotenv from 'dotenv';
 const app = express();
 app.use(cors());
 
+app.use(express.static('public'));
+
 dotenv.config();
 
 //handle json objects
