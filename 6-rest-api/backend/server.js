@@ -4,12 +4,12 @@ import pool from './db.js';
 import dotenv from 'dotenv';
 
 dotenv.config();
-
-const app = express();
-
 app.use(cors());
 app.use(express.json());
 
+const app = express();
+
+//add a book
 app.post('/books', async (req, res) => {
   const { title, author, format } = req.body;
   try {
@@ -24,6 +24,7 @@ app.post('/books', async (req, res) => {
   }
 });
 
+//retrieve book list
 app.get('/books', async (req, res) => {
   try {
     const allBooks = await pool.query('SELECT * FROM books');
@@ -34,6 +35,7 @@ app.get('/books', async (req, res) => {
   }
 });
 
+//edit book information
 app.put('/books/:id', async (req, res) => {
   const { id } = req.params;
   const { title, author, format } = req.body;
@@ -52,6 +54,7 @@ app.put('/books/:id', async (req, res) => {
   }
 });
 
+//delete a book
 app.delete('/books/:id', async (req, res) => {
   const { id } = req.params;
   try {
