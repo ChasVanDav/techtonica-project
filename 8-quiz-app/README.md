@@ -50,6 +50,7 @@ Open another terminal window, navigate to the `client` folder, install frontend 
 cd client
 npm install
 npm run dev
+```
 
 The frontend will run on http://localhost:3000 by default.
 
