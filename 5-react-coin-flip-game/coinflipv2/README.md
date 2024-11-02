@@ -60,19 +60,24 @@ This app uses a modular approach with React, breaking down the logic into distin
 # 🤝 Contributing
 Contributions are welcome! To contribute:
 1. **Fork the repository**.
+
 2. **Create a new branch**:
-   ```
-   git checkout -b feature/YourFeature
+```
+git checkout -b feature/YourFeature
+```
 
 3. Make your changes and commit:
 ```
 git commit -m "Add new feature"
 ```
+
 4. Push to your branch:
 ```
 git push origin feature/YourFeature
 ```
+
 5. Open a pull request on GitHub.
+
 
 # 📜 License
 This project is licensed under the MIT License.
