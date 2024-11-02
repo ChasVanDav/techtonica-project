@@ -81,7 +81,7 @@ Ensure you have the following installed:
   - **Query Parameter**: `city` (optional, defaults to "Honolulu").
 
 ## Stretch Goals
-_(Additional features may be added in the future)_
+My main stretch goal for the unicorn weather app is to updgrade the look of the app, improve the responsiveness across devices, and add default weather based on detected location.
 
 ## Contributing
 For questions, comments, or contributions, please contact me via email or open an issue in this GitHub repository.
