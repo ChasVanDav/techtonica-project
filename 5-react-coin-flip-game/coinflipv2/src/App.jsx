@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import './App.css' 
 import './style.css'
-import headsImage from "./assets/quarter_heads.jpg"
-import tailsImage from "./assets/quarter_tails.png"
+import Coin from './components/Coin.jsx';
+import Stats from './components/Stats.jsx';
+import Buttons from './components/Buttons.jsx';
 
 //default states for each component
 const App = () => {
@@ -46,26 +47,9 @@ const App = () => {
 
   return (
     <div className="container">
-      <div className="coin" style={{ animation }}>
-        <div className="heads">
-          <img src={headsImage} alt="head side of an American 25 cents coin" />
-        </div>
-        <div className="tails">
-          <img src={tailsImage} alt="tail side of an American 25 cents coin" />
-        </div>
-      </div>
-      <div className="stats">
-        <p>Heads: {heads}</p>
-        <p>Tails: {tails}</p>
-      </div>
-      <div className="buttons">
-        <button id="flip-button" onClick={flipCoin} disabled={isFlipping}>
-          Flip
-        </button>
-        <button id="reset-button" onClick={resetCount}>
-          Reset
-        </button>
-      </div>
+      <Coin animation={animation} />
+      <Stats heads={heads} tails={tails} />
+      <Buttons flipCoin={flipCoin} resetCount={resetCount} isFlipping={isFlipping} />
     </div>
   );
 };
